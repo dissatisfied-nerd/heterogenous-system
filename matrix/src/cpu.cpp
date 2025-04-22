@@ -1,6 +1,6 @@
 #include "matrix.cuh"
 
-Matrix CPUMultiply(const Matrix& A, const Matrix& B) 
+Matrix CPUSingleMultiply(const Matrix& A, const Matrix& B) 
 {
     if (A.empty() || B.empty() || A[0].size() != B.size()) {
         throw std::invalid_argument("Несовместимые размеры матриц для умножения.");
